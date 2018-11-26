@@ -1,7 +1,7 @@
 find_package(GTest REQUIRED)
 
-add_executable(unit_tests mainTestRunner.cpp
-    gtestwrapper.h
+add_executable(unit_tests
+    mainTestRunner.cpp
     test_types.cpp
     test_tiffheader.cpp
     test_futils.cpp
