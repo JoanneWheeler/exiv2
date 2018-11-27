@@ -5,6 +5,7 @@ set -x # Prints every command
 if [[ "$(uname -s)" == 'Linux' ]]; then
     sudo apt-get update
     sudo apt-get install cmake zlib1g-dev libssh-dev python-pip libxml2-utils
+    sudo apt-get install libc6-dev
     if [ -n "$WITH_VALGRIND" ]; then
         sudo apt-get install valgrind
     fi
